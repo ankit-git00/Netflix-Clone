@@ -1,0 +1,258 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+    
+}
+
+.header
+{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(netflix-img/header-image.png);
+    height: 100vh;
+    width: 100%;
+    /* image will be centered, open image to see */
+   background-position: center; 
+   background-size: cover;
+   /* padding: 10px 8%; */
+   position: relative;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+button{
+    background-color: red;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    padding: 7px 20px;
+    border:black 2xp;
+    font-size: 12px;
+    margin: 8px;
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+.logo
+{
+    width: 12%;
+    cursor: pointer;   
+    background-color: transparent; 
+    margin-left:10%;
+    margin-top:2%;
+}
+.language-btn
+{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+
+.language-btn img
+{
+    width: 10px;
+    margin-left: 4px;
+}
+
+.header-content{
+    
+    position:absolute;
+    top:50%;
+    width: 100%;
+    text-align: center;
+}
+
+.header-content h1{
+    margin: 10px ;
+    font-size: 50px;
+    font-weight: 700;
+}
+.header-content h3{
+    margin : 10px;
+}
+
+.email-signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email-signup input{
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 200px;
+    margin:0;
+ 
+     text-align: left;
+     background-color: transparent;
+     border: 1px solid grey;
+     font-size: large;
+ }
+
+ .email-signup button{
+    text-align: center;
+    margin-left: 4px;
+    padding : 11px 50px;
+    font-size: large;
+ }
+ 
+ 
+ .email-signup input::placeholder{
+     color: gray;
+ }
+
+
+
+ .row
+ {
+    display: flex;
+    align-items: center;
+    border-top: 5px solid gray;
+    justify-content: center;
+    padding: 50px 0;
+    padding-left: 30px;
+    padding-right:30px;
+ }
+
+ .text-col{
+    flex-basis: 50%;
+    /* margin-bottom: 20px; */
+ }
+
+ .img-col{
+    flex-basis:50%;
+    /* margin-bottom: 20px; */
+ }
+ .text-col h1{
+    font-size: 40px;
+    font-weight: 600;
+ }
+ .text-col h2{
+font-weight:lighter;    
+
+}
+ .img-col img{
+    /* display: block; */
+    width: 90%;
+ }
+/* --------faq----------------------------------- */
+ .faq{
+    border-top: 5px solid gray;
+    text-align: center;
+ }
+
+ .faq h1{
+    margin-top: 5%;
+    /* margin-bottom: 2%; */
+    font-size: 50px;
+ }
+
+ .accordion{
+    margin:60px auto;
+    /* width: 100%; */
+    max-width: 70%;
+    list-style: none;
+    
+ }
+
+ .accordion li{
+    /* list-style: none; */
+    margin:20px 0;
+ }
+
+ .accordion li label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size:large;
+    font-weight: 500;
+    background: #303030;
+ }
+
+ label::after{
+    position: absolute;
+    content: '+';
+    font-size: 34px;
+    right: 200px;
+ }
+
+ /* to hide selector button  */
+ input[type="radio"]{ 
+    display: none;
+ }
+
+ .accordion .content{
+    /* display: none; */
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+
+    transition: max-height 0.5s;
+ }
+
+ .accordion input[type="radio"]:checked + label + .content{
+     
+   max-height: 600px;
+   padding-bottom: 10px;
+ }
+
+ /* ----------------------------- */
+
+
+ .bottom-email-signup{
+   border:none;
+ }
+ .bottom-email-signup h2{
+      /* text-align: center; */
+      padding: 10px 0px 5px 0px;
+      display: flex;
+      /* border-top : 2px solid gray; */
+      justify-content: center;
+ }
+
+ /* footer---------------------------------- */
+.footer{
+   border-top: #303030 solid 7px;
+}
+ .footer h3{
+  
+color: gray;
+   margin-top: 100px ;
+   margin-left: 220px;
+   border:none;
+ }
+ .footer .col{
+   display: flex;
+   flex-direction: column;
+ }
+
+ .footer .row{
+  
+   display: flex;
+   justify-content: space-evenly;
+   border:none;
+   align-items:start;
+ }
+ .footer .col a{
+
+   display: block;
+   margin:10px;
+   text-decoration: none;
+   color:gray;
+   
+ }
